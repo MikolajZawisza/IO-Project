@@ -128,7 +128,7 @@ public class ConnectFourPanel extends JPanel implements MouseListener,MouseMotio
         if(!con.getWin()){
             insertCircle(me);
             con.checkWin();
-            repaint();
+            repaint(); // Odświeżanie widoku komponentu - paintComponent
             if(checkCol && !con.getWin())
                 active = con.changePlayer(active);
         }
